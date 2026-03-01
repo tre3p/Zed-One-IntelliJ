@@ -1,0 +1,30 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>zed-one</id>
+    <version>1.0.0</version>
+
+    <name>Zed One</name>
+    <category>UI</category>
+
+    <vendor url="https://zed.dev">Zed Industries</vendor>
+
+    <idea-version since-build="252.25557"/>
+
+    <description><![CDATA[
+        Port of the <b>Zed One</b> theme from the <a href="https://zed.dev">Zed editor</a> to JetBrains IDEs.<br>
+        Includes both <b>One Dark</b> and <b>One Light</b> variants with full syntax highlighting,
+        UI theming, console ANSI colors, and icon tinting.<br><br>
+        Based on the original theme by Zed Industries.
+    ]]></description>
+
+    <change-notes><![CDATA[
+        Initial release of the Zed One theme with Dark and Light variants.
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="zed-one-dark" path="/theme/zed_one_dark.theme.json"/>
+        <themeProvider id="zed-one-light" path="/theme/zed_one_light.theme.json"/>
+    </extensions>
+</idea-plugin>

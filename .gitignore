@@ -6,3 +6,4 @@ build/
 .claude/
 .intellijPlatform/
 *.iml
+.DS_Store
